@@ -276,6 +276,8 @@ services:
       - WEB_ROOT=https://localhost
       - JWT_SECRET=Zu0gPaBdGSP8qwuoK6C1vlBLaXOh6gGq
       - SESSION_SECRET=Xn2r5u8xjAgD7G3KaPdSgVkYp3s6v9y5
+      - RECAPTCHA_SECRETKEY=
+      - RECAPTCHA_SITEKEY=
     volumes:
       - ./email-api:/home/node/app:consistent
       - ./wait-for-it:/home/node/wait-for-it
