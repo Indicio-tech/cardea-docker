@@ -16,3 +16,9 @@
 [submodule "wait-for-it"]
 	path = wait-for-it
 	url = https://github.com/vishnubob/wait-for-it.git
+[submodule "email-ui"]
+	path = email-ui
+	url = git@github.com:Indicio-tech/email-agent-ui.git
+[submodule "email-api"]
+	path = email-api
+	url = git@github.com:Indicio-tech/email-agent-controller.git
