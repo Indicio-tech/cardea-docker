@@ -345,7 +345,7 @@ services:
       - app-network
   agent-test:
     build: aries-acapy-plugin-toolbox
-    :
+    environment:
       TUNNEL_HOST: tunnel-test
       AGENT_NAME: Test
       PORT: 3009
