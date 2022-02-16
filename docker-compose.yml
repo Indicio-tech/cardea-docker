@@ -196,7 +196,7 @@ services:
     environment:
       - WAIT_BEFORE_HOSTS=3
       - WAIT_HOSTS=lab-proxy:3000,lab-agent:3005
-      - WAIT_HOSTS_TIMEOUT=60
+      - WAIT_HOSTS_TIMEOUT=120
       - WAIT_SLEEP_INTERVAL=1
       - WAIT_HOST_CONNECT_TIMEOUT=10
       - PROXY=http://lab-proxy:3000
@@ -336,7 +336,7 @@ services:
     environment:
       - WAIT_BEFORE_HOSTS=3
       - WAIT_HOSTS=government-proxy:3000,government-agent:3006
-      - WAIT_HOSTS_TIMEOUT=60
+      - WAIT_HOSTS_TIMEOUT=120
       - WAIT_SLEEP_INTERVAL=1
       - WAIT_HOST_CONNECT_TIMEOUT=10
       - PROXY=http://government-proxy:3000
@@ -442,7 +442,7 @@ services:
         --genesis-url ${GENESIS_URL} 
         ${VERIFIER_SEED}
     ports:
-      - 3010:3010
+      - 3009:3009
       - 8154:8154
     networks:
       - app-network
@@ -464,7 +464,7 @@ services:
     environment:
       - WAIT_BEFORE_HOSTS=3
       - WAIT_HOSTS=verifier-proxy:3000,verifier-agent:3009
-      - WAIT_HOSTS_TIMEOUT=60
+      - WAIT_HOSTS_TIMEOUT=120
       - WAIT_SLEEP_INTERVAL=1
       - WAIT_HOST_CONNECT_TIMEOUT=10
       - PROXY=http://verifier-proxy:3000
@@ -531,7 +531,7 @@ services:
     environment:
       - WAIT_BEFORE_HOSTS=3
       - WAIT_HOSTS=test-proxy:3000,test-agent:3010
-      - WAIT_HOSTS_TIMEOUT=60
+      - WAIT_HOSTS_TIMEOUT=120
       - WAIT_SLEEP_INTERVAL=1
       - WAIT_HOST_CONNECT_TIMEOUT=10
       - PROXY=http://test-proxy:3000
